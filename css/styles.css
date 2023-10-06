@@ -546,7 +546,7 @@ ul {
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 250em cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -761,7 +761,6 @@ button {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
