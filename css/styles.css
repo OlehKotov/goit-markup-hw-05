@@ -753,13 +753,13 @@ button {
   color: #4d5ae5;
 }
 
-.check-label-box {
-  display: inline-flex;
+input[type="checkbox"] + label > span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
@@ -767,7 +767,7 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-check:checked + .check-label > .check-label-box {
+input[type="checkbox"]:checked + label > span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
