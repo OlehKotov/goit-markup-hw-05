@@ -590,8 +590,7 @@
             autocomplete="off"
             novalidate
           >
-            <div class="footer-input-wrap">
-              <label for="footer-input"></label>
+            <label for="footer-input" class="footer-label-input">
               <input
                 type="email"
                 class="footer-input"
@@ -599,15 +598,12 @@
                 id="footer-input"
                 placeholder="E-mail"
               />
-            </div>
-            <div class="footer-button-wrap">
-              <button type="submit" class="footer-form-btn">
-                <span>Subscribe</span
-                ><svg class="footer-btn-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                </svg>
-              </button>
-            </div>
+            </label>
+            <button type="submit" class="footer-form-btn">
+              Subscribe<svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -668,34 +664,33 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label" for="user-text">Comment</label>
-            <div class="input-wrap">
-              <textarea
-                type="text"
-                class="modal-textarea"
-                name="user-text"
-                id="user-text"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="modal-field-check">
             <input
               type="checkbox"
               class="modal-check visually-hidden"
-              name="user-checkbox"
-              id="privacy"
-              value=""
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               required
             />
-            <label class="check-label" for="privacy"
+            <label class="check-label" for="user-privacy"
               ><span class="check-label-box">
                 <svg class="check-label-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href=""><span> Privacy Policy</span></a></label
+              <a href="" class="check-label-link"
+                ><span> Privacy Policy</span></a
+              ></label
             >
           </div>
           <button type="submit" class="form-btn">Send</button>
